@@ -28,3 +28,4 @@ interpolated = SrcImg(y0,x0)*x_weight+SrcImg(y0,x1)*(1-x_weight)+...
                SrcImg(y0,x1)*y_weight+SrcImg(y1,x1)*(1-y_weight);
 Result = interpolated*0.25;
 %
+%
