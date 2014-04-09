@@ -15,5 +15,11 @@ Few of the functions of this work (e.g. the conversion between )are based on Mac
   
     See https://vision.in.tum.de/data/datasets/rgbd-dataset/download. You can choose one of the set to run the algorithm.
 
+*   Run the algorithm.
+
+    Execute the main.m to run the algorithm.
+    
+    Note: Change the input directory to where you save input file.
+
 
   
