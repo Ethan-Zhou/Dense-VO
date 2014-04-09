@@ -62,19 +62,19 @@ end
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%Write residual to jpeg file
-I22 = WarpImage(I2,Z2,G,InParas);
-r = GetResidual(I1,I22);
-figure(i);
-set(gcf,'Position',[100 100 320 240]);
-set(gca,'units','pixels');
-set(gca,'units','normalized','position',[0 0 1 1]);
-set(gcf, 'PaperUnits', 'inches', 'PaperPosition', [0 0 640/1.5 480/1.5]/200);
-% set(gca,'xcolor','w','ycolor','w','xtick',[],'ytick',[])
-% set(gcf, 'PaperUnits', 'inches', 'PaperPosition', [0 0 640 512]/200);
-% set (gcf,'Position',[0,0,500,500]);
-imshow(r,[0 255]);
-saveas(gcf,['D:\MATLAB\code\DenseImageRealignment\Residual_freiburg1_360_jpg\',num2str(i),'.jpg']);
-close(figure(i));
+%     I22 = WarpImage(I2,Z2,G,InParas);
+%     r = GetResidual(I1,I22);
+%     figure(i);
+%     set(gcf,'Position',[100 100 320 240]);
+%     set(gca,'units','pixels');
+%     set(gca,'units','normalized','position',[0 0 1 1]);
+%     set(gcf, 'PaperUnits', 'inches', 'PaperPosition', [0 0 640/1.5 480/1.5]/200);
+%     % set(gca,'xcolor','w','ycolor','w','xtick',[],'ytick',[])
+%     % set(gcf, 'PaperUnits', 'inches', 'PaperPosition', [0 0 640 512]/200);
+%     % set (gcf,'Position',[0,0,500,500]);
+%     imshow(r,[0 255]);
+%     saveas(gcf,['D:\MATLAB\code\DenseImageRealignment\Residual_freiburg1_360_jpg\',num2str(i),'.jpg']);
+%     close(figure(i));
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
         
