@@ -1,4 +1,4 @@
-function [G e]= EstimateCameraMotion(I1,Z1,I2,Z2,G_initial,InParas,epsilon,kmax,initial_sigma,default_dof,i)
+function [G e r W]= EstimateCameraMotion(I1,Z1,I2,Z2,G_initial,InParas,epsilon,kmax,initial_sigma,default_dof,i)
 % Project:   Dense Visual Odometry
 % Function: EstimateCameraMotion
 %
@@ -59,7 +59,6 @@ while 1
         break;
     end
 end
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%Write residual to jpeg file
 %     I22 = WarpImage(I2,Z2,G,InParas);

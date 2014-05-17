@@ -30,7 +30,13 @@ function [J W r] = ComputeJacobianAndError(I1,Z1,I2,Z2,G,InParas,initial_sigma,d
 I22 = WarpImage(I2,Z2,G,InParas);
 r = GetResidual(I1,I22);
 [delta iteration]= TDistributionScaleEstimator(initial_sigma,default_dof,r);
+%Use t-distribution
 W = TDistributionInfluenceFunction(r,delta,default_dof);
+% h = GetHistogram(r,W,100);
+% a = [-50:1:50];
+% plot(a,h,'*');
+%Use FIS based method
+%W = WDFIS(r,d_r);
 GetDerivative = CalcDerivative;
 I22_dx = GetDerivative.fun1(I22);
 I22_dy = GetDerivative.fun2(I22);

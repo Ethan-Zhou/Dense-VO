@@ -20,8 +20,8 @@ function [epsilon,kmax,initial_sigma,default_dof,DSR,scalefactor] = GetInitialPa
 % 2014-03-12: Complete
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 epsilon = 1e-8;
-kmax = 500;
+kmax = 50;
 initial_sigma = 5;
 default_dof = 5;
-DSR = 4;%降采样率
+DSR = 2;%降采样率
 scalefactor = 5000;%图像采集设备的比例系数
