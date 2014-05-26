@@ -69,11 +69,11 @@ fprintf(fid1,'\n');
 
 %Subsequent calculation using my proposed method and TUM mehtod at the same
 %tiem for the sake of comparison
-for i = 1232:1261%ITimes
+for i = 1232:1232%ITimes
 % My Proposed Method
 [I2 D2 I3 D3 rows cols] = ReadSuccessiveFrames(IntensityFileList,DepthFileList,i,scalefactor,DSR);
 [G2 e2 r2 W2] = EstimateCameraMotion(I2,D2,I3,D3,G_initial,InParas,epsilon,kmax,initial_sigma,default_dof,i);
-%[GG2 ee2 rr2 WW2] = CME_New(rr1,I2,D2,I3,D3,G_initial,InParas,epsilon,kmax,initial_sigma,default_dof,i);
+[GG2 ee2 rr2 WW2] = CME_New(rr1,I2,D2,I3,D3,G_initial,InParas,epsilon,kmax,initial_sigma,default_dof,i);
 %rr1 = rr2;
 
 % Incremental
