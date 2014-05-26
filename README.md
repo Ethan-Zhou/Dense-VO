@@ -4,7 +4,11 @@ This work provide a matlab implementation of rigig body motion estimation of aan
 
 *   **core**
     
-    Core implementation of the rigid body motion estimation algorithm.
+    Core implementation of the camera motion estimation algorithm.
+
+*   **weight determination**
+    
+    Some useful functions for new weight determination method.
 
 
 # Usage
