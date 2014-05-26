@@ -1,5 +1,29 @@
 function [J2 r2] = ComputeJacobianAndError_New(I2,Z2,I3,Z3,G2_iter,InParas)
-
+% Project:   Dense Visual Odometry
+% Functions: ComputeJacobianAndError_New
+%
+% Description:
+%   Get the Jacobian and residual of an aligning pair
+%
+% Example:
+%   [J2 r2] = ComputeJacobianAndError_New(I2,Z2,I3,Z3,G2_iter,InParas)
+%   
+%   I2,I3: The input image pair, both are gray
+%   Z2,Z3: The input depth image pair
+%   G2_iter: Rigid body motion matrix, which describe the camera motion between the two successive snapshot 
+%   InParas: A struct object which contains necessary intrinsic parameters
+%            of the RGB-D camera
+%
+% NOTE: 
+%
+% Author: Ethan Zhou
+% Email: cavatina@yeah.net
+% Website: https://github.com/Ethan-Zhou/Dense-VO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% log:
+% 2014-05-27: Complete
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 [rows cols] = size(I2);
 length = rows*cols;
 I33 = WarpImage(I3,Z3,G2_iter,InParas);

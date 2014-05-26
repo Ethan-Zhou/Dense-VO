@@ -24,7 +24,7 @@ function [Output,SP] = CheckMotion(r,dr,thresh1,thresh2)
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % log:
-% 2014-03-03: Complete
+% 2014-05-27: Complete
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 [rows cols] = size(r);
 length = rows*cols;
