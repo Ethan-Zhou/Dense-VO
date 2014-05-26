@@ -6,6 +6,6 @@ len = rows*cols;
 for i = 1:len
     p2 = GetPosition(i,cols);
     if InMovingRegion(p2,centers,radius) == 1
-        Weight(i) = 0;
+        Weight(i) = NaN;
     end
 end

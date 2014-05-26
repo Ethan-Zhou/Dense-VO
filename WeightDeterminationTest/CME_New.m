@@ -5,7 +5,7 @@ k = 0;
 
 while 1
     [J2 r2] = ComputeJacobianAndError_New(I2,Z2,I3,Z3,G2,InParas);
-    W2 = WeightDetermination(r2,abs(r1-r2),initial_sigma,default_dof,5,100);
+    W2 = WeightDetermination(r2,abs(r1-r2),initial_sigma,default_dof,10,100);
     [Je We re num Jn Wn rn] = GetValidJWr(J2,W2,r2);
     e_last = e2;
     e2 = GetError(re,We);
@@ -21,5 +21,3 @@ while 1
         break;
     end
 end
-    
-

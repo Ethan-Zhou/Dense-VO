@@ -9,7 +9,7 @@ GetDerivative = CalcDerivative;
 I33_dx = GetDerivative.fun1(I33);
 I33_dy = GetDerivative.fun2(I33);
 
-J = zeros(rows*cols,6);
+%J = zeros(rows*cols,6);
 for i = 1:length
     p2 = GetPosition(i,cols);
     y = p2(2);
