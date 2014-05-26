@@ -30,5 +30,7 @@ switch InstrumentName
         InParas = [525.0/DSR 525.0/DSR 319.5/DSR 239.5/DSR];
     case 'fr1'
         InParas = [517.3/DSR 516.5/DSR 318.6/DSR 255.3/DSR];
+    case 'fr2'
+        InParas = [520.9/DSR 521.0/DSR 325.1/DSR 249.7/DSR];
 end
         

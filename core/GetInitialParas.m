@@ -20,7 +20,7 @@ function [epsilon,kmax,initial_sigma,default_dof,DSR,scalefactor] = GetInitialPa
 % 2014-03-12: Complete
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 epsilon = 1e-8;
-kmax = 50;
+kmax = 200;
 initial_sigma = 5;
 default_dof = 5;
 DSR = 2;%½µ²ÉÑùÂÊ

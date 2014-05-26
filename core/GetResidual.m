@@ -28,7 +28,7 @@ r = zeros(rows,cols);
 for y = 1:rows
     for x = 1:cols
         if isnan(I2(y,x)) == 0
-            r(y,x) = I2(y,x) - I1(y,x);
+            r(y,x) = abs(I2(y,x) - I1(y,x));
         else
             r(y,x) = NaN;
         end

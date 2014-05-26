@@ -29,7 +29,7 @@ w = ksi(4:6);
 
 len_w = sqrt(dot(w,w));
 Wx = TwistMatrix(w);
-if len_w < 0.0001
+if len_w < 1e-7
     R = eye(3) + Wx + 0.5*Wx*Wx;
     V = eye(3) + 0.5*Wx + Wx*Wx/3;
 else

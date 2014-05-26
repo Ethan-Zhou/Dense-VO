@@ -29,6 +29,7 @@ function [J W r] = ComputeJacobianAndError(I1,Z1,I2,Z2,G,InParas,initial_sigma,d
 [rows cols] = size(I1);
 I22 = WarpImage(I2,Z2,G,InParas);
 r = GetResidual(I1,I22);
+imshow(r,[0,255]);
 [delta iteration]= TDistributionScaleEstimator(initial_sigma,default_dof,r);
 %Use t-distribution
 W = TDistributionInfluenceFunction(r,delta,default_dof);

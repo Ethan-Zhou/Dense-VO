@@ -48,7 +48,7 @@ while 1
     
     lamda = lamda/num;
     lamda = 1/lamda;
-    if abs(lamda - initial_lamda)<1e-3
+    if abs(lamda - initial_lamda)<=1e-3
         break;
     end
 end
