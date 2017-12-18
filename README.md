@@ -1,3 +1,5 @@
+# NOTE: THIS CODE IS JUST AN EXPERIMENT, PLEASE DO NOT USE THIS CODE. ANY QUESTIONS REGARDING THIS CODE WILL NOT BE REPLIED.
+
 # Dense-VO
 
 This work provide a matlab implementation of rigig body motion estimation of aan RGB-D camera from consecutive frames.
